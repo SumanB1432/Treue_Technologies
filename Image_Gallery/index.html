@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Image Gallery</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <!-- Thumbnails -->
+            <div class="gallery-item" data-caption="Image 1">
+                <img src="assets/image (10).jpeg" alt="img2" height="200px" width="200px">
+                
+            </div>
+            
+            <div class="gallery-item" data-caption="Image 2">
+                <img src="assets/image (2).jpeg" height="200px" width="200px">
+                
+            </div>
+            <div class="gallery-item" data-caption="Image 3">
+                <img src="assets/image (18).jpeg" height="200px" width="200px">
+                
+            </div>
+            <div class="gallery-item" data-caption="Image 4">
+                <img src="assets/image (17).jpeg" height="200px" width="200px">
+                
+            </div>
+            <div class="gallery-item" data-caption="Image 5">
+                <img src="assets/image (16).jpeg" height="200px" width="200px">
+                
+            </div>
+            <div class="gallery-item" data-caption="Image 6">
+                <img src="assets/image (15).jpeg" height="200px" width="200px">
+                
+            </div>
+            <div class="gallery-item" data-caption="Image 7">
+                <img src="assets/image (14).jpeg" height="200px" width="200px">
+                
+            </div>
+            <div class="gallery-item" data-caption="Image 8">
+                <img src="assets/image (13).jpeg" height="200px" width="200px">
+                
+            </div>
+            <div class="gallery-item" data-caption="Image 9">
+                <img src="assets/image (12).jpeg" height="200px" width="200px">
+                
+            </div>
+            <div class="gallery-item" data-caption="Image 10">
+                <img src="assets/image (11).jpeg" height="200px" width="200px">
+                
+            </div>
+                
+                
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="hidden">
+        <span class="close-btn" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-image" src="" alt="">
+            <p id="caption"></p>
+        </div>
+        <span class="prev" onclick="changeImage(-1)">&#10094;</span>
+        <span class="next" onclick="changeImage(1)">&#10095;</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+

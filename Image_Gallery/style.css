@@ -1,0 +1,79 @@
+/* Reset some default styles */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Gallery Styles */
+.gallery-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.gallery-item {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    height: 200px;
+    width: 200px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Lightbox Styles */
+#lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+}
+
+.lightbox-content {
+    position: relative;
+    margin: 20px auto;
+}
+
+#lightbox-image {
+    max-width: 80%;
+    max-height: 70vh;
+}
+
+.close-btn, .prev, .next {
+    font-size: 36px;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close-btn {
+    right: 20px;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
